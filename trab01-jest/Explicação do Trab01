@@ -1,0 +1,63 @@
+# Criação do diretório do projeto
+mkdir trab01
+
+# Transformar o diretorio em um projeto npm
+npm init -y
+
+# instalar o jest (Parametros i para instalar e -D para modo de desenvolvedor, 
+# ou seja quando buildar a aplicação para a produção do jest não irá para a produção)
+npm i -D jest
+
+# Para uma melhor organização do código foi criado um diretório chamado src e dentro outro diretório chamado students
+# Dentro de students, foi criados os arquivos students.jets.js onde será o arquivo utilizados para o testes
+# e students.js será de fato as funções que realizará os teste
+
+
+
+// Arquivo students.test.js
+
+//  Faz a importação das classes e funções do arquivo student.js
+const student = require('./student')
+
+// Função para descrever o que será testado
+describe('Testes para sistema de Matriculas', () => {
+    // criação dos testes, será passado uma string 
+    // descrevendo a serem realizado e como segundo parâmetro
+    // será a função que o teste irá chamar
+    it('Deve retornar verdadeiro se houver vagas na disciplina', () => {
+
+    })
+    it('Deve retornar falso se NAO houver vagas na disciplina', () => {
+
+    })
+
+})
+
+
+student.js
+
+    fazerMatricula: matriculas => {
+        const capacidadeDisciplina = 4
+        return matriculas.length <= capacidadeDisciplina ? true : false
+    },
+
+    calculaMedia: notasAluno => {
+        const notas = notasAluno.reduce((acumulador, aluno) => {
+            return acumulador = ((aluno.nota1 * 4) + (aluno.nota2 * 5) + (aluno.nota3 * 6)) / 15
+        }, 0)
+        if(notas >= 7){
+            return true
+        } else{
+            return false
+        }
+    },
+    calculaPorcentagem: notasAluno => {
+        let acumulador = 0
+        notasAluno.forEach(element => {
+            if((((element.nota1 * 4) + (element.nota2 * 5) + (element.nota3 * 6)) / 15) >= 7){
+                acumulador++
+            }
+        });
+        return ((acumulador / notasAluno.length) * 100)
+    }
+

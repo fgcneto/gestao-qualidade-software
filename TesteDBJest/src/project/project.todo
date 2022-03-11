@@ -1,0 +1,14 @@
+#Regras de negócio para PROJETOS
+
+Projetos adicionados:
+    Projeto 1: 6 tarefas incompletas (320, 120, 300, 10, 100, 50) e 0 tarefas completas
+    Projeto 2: 3 tarefas Incompletas (120, 300) e 1 tarefa completa (100)
+    Projeto 3: 3 tarefas completas
+
+
+Regras:
+    ☐ Não é possível adicionar uma tarefa a um projeto que possui mais do que 800 minutos
+    ☐ A tarefa prioritária de um projeto é aquela incompleta e com maior duração
+    ☐ Caso o sistema não tenha tarefas incompletas, o sistema não possui tarefas prioritárias
+    ☐ A prioridade de um projeto é dada considerando a % tarefas_completadas (peso 2) e o tempo_restante_projeto (peso 4)
+    ☐ Não é possível desabilitar um projeto que tenha tarefas incompletas

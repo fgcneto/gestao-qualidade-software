@@ -1,0 +1,8 @@
+# Regras para os estudantes
+
+Regras:
+    ☐ A nota final do aluno deve ser composta pela soma das notas dos alunos
+    ☐ Se caso uma nota for zero, a soma de retornar zero 
+    ☐ Caso o aluno tenha mais de cinco notas, a soma deve ser multiplicada com 2
+    ☐ Se alguma das notas for maior que 9, a soma deve ser multiplicada com 2
+

@@ -1,0 +1,8 @@
+# Regras de negócio para o sistemas de matrículas
+
+Regras:
+    ☐ Deve retornar se há disponibilidade de vagas para a disciplina.
+    ☐ Deve retornar a não existência de vagas disponível para a disciplina.
+    ☐ O sistema poderá mostrar o percentual de alunos aprovados em uma turma.
+    ☐ Alunos com média ponderada (pesos 4,5,6) maior ou igual a 7, são aprovados na disciplina.
+    ☐ Alunos com média ponderada (pesos 4,5,6) menor que 7, são reprovados na disciplina.
